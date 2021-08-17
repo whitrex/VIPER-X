@@ -16,6 +16,35 @@ Project created by <a href="https://github.com/farhan-dqz">Farhan-dqz</a> to mak
     <br> 
 </p>
 
+## Setup
+<div align="center">
+
+  ### Simple Method
+  
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/farhan-dqz/Julie-Mwol_2) 
+  
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Farhandqz/JulieMwol)
+  
+### The Hard Method
+```js
+GET QR
+$ apt install git
+$ apt install nodejs --fix-missing
+$ git clone https://github.com/farhan-dqz/Julie-Mwol
+$ cd Julie-Mwol
+$ npm install @adiwajshing/baileys
+$ npm install chalk
+$ node julie.js
+```
+      
+```js
+SETUP
+$ git clone https://github.com/farhan-dqz/JulieMwol
+$ cd JulieMwol
+$ npm i
+$ node julie.js
+```
+
 ----
 
   <p align="center">
@@ -42,7 +71,7 @@ Click WA logo to Join Support Group 👇
 
   ### Simple Method
   
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/farhan-dqz/Julie-Mwol) 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/farhan-dqz/Julie-Mwol_2) 
   
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Farhandqz/JulieMwol)
   
