@@ -12,8 +12,19 @@ const Language = require('../language');
 const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
-
+    {
+            
+        var image = await axios.get (Config.AFP, {responseType: 'arraybuffer'})
+   
+    await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'CMD_HELP' })
+}
     Asena.addCommand({pattern: 'help ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+        {
+            
+            var image = await axios.get (Config.PIC, {responseType: 'arraybuffer'})
+       
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'CMD_HELP' })
+    }
 
         var CMD_HELP = '';
         if (match[1] === '') {
@@ -122,7 +133,12 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     Asena.addCommand({pattern: 'help ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
+        {
+            
+            var image = await axios.get (Config.AFP, {responseType: 'arraybuffer'})
+       
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'CMD_HELP' })
+    }
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
@@ -228,7 +244,12 @@ else if (Config.WORKTYPE == 'public') {
     }));
 
     Asena.addCommand({pattern: 'list ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
-
+        {
+            
+            var image = await axios.get (Config.AFP, {responseType: 'arraybuffer'})
+       
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'CMD_HELP' })
+    }
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
@@ -279,6 +300,12 @@ else if (Config.WORKTYPE == 'public') {
             );  
         } else {
             var CMD_HELP = '';
+            {
+            
+                var image = await axios.get (Config.AFP, {responseType: 'arraybuffer'})
+           
+            await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'CMD_HELP' })
+        }
             Asena.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
