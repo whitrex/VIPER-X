@@ -10,7 +10,7 @@ const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 
 const fs = require('fs');
 const axios = require('axios');
-const conf = require('../config');
+const config = require('../config');
 const FormData = require('form-data');
 const ffmpeg = require('fluent-ffmpeg');
 
