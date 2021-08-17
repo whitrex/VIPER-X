@@ -3,7 +3,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const DEL_DESC = "Deletes The Replied Message Send By The Bot."
 const Config = require('../config');
 
-let farhan = conf.WORKTYPE == 'public' ? false : true
+let farhan = Config.WORKTYPE == 'public' ? false : true
 
 Asena.addCommand({pattern: 'del', fromMe: farhan, desc: DEL_DESC}, (async (message, match) => {
 
