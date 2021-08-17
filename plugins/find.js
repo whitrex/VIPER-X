@@ -10,11 +10,11 @@ const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 
 const fs = require('fs');
 const axios = require('axios');
-const config = require('../config');
+const Config = require('../config');
 const FormData = require('form-data');
 const ffmpeg = require('fluent-ffmpeg');
 
-let td = conf.WORKTYPE == 'public' ? false : true
+let td = Config.WORKTYPE == 'public' ? false : true
 
 var Desc = ''
 if (Config.LANG == 'AZ') Desc = 'Finds the Replied song/audio.'
