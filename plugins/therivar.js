@@ -24,7 +24,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
    
    
     if (config.LANG == 'ML') {
-        l_dsc = 'അംഗങ്ങൾ നൽകിയ മോശം വാക്ക് ഉപയോഗിക്കുമ്പോൾ അവരെ നീക്കം ചെയ്യാൻ'
+        l_dsc = 'To remove members when they use a bad word they have given them'
         THERI_on = 'Bad word removal item'
         THERI_off = 'Remove the word and turn it off'
     }
