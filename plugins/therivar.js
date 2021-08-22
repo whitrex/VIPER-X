@@ -25,8 +25,8 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
    
     if (config.LANG == 'ML') {
         l_dsc = 'അംഗങ്ങൾ നൽകിയ മോശം വാക്ക് ഉപയോഗിക്കുമ്പോൾ അവരെ നീക്കം ചെയ്യാൻ'
-        THERI_on = 'മോശം വാക്ക് നീക്കംചെയ്യൽ ഓണാക്കി'
-        THERI_off = 'മോശം വാക്ക് നീക്കംചെയ്യൽ ഓഫാക്കി'
+        THERI_on = 'Bad word removal item'
+        THERI_off = 'Remove the word and turn it off'
     }
    
     Asena.addCommand({pattern: 'theri ?(.*)', fromMe: true, desc: l_dsc, usage: '.theri no / yes' }, (async (message, match) => {
