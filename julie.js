@@ -11,7 +11,7 @@ const {WAConnection, MessageOptions, MessageType} = require('@adiwajshing/bailey
 const {StringSession} = require('./julie/');
 const fs = require('fs');
 
-async function whatsAsena () {
+async function viper x () {
     const conn = new WAConnection();
     const Session = new StringSession();  
     conn.version = [2, 2119, 6]
@@ -19,10 +19,10 @@ async function whatsAsena () {
     conn.regenerateQRIntervalMs = 50000;
     
     conn.on('connecting', async () => {
-        console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
+        console.log(`${chalk.green.bold('viper')}${chalk.blue.bold('x')}
 ${chalk.white.italic('AsenaString Kodu Alıcı')}
 
-${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
+${chalk.blue.italic('ℹ️ VIPER-X Connecting to Whatsapp... Please Wait.')}`);
     });
     
 
@@ -37,14 +37,14 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         }
         if (conn.user.jid.startsWith('90')) {
             await conn.sendMessage(conn.user.jid,st, MessageType.text)
-            await conn.sendMessage(conn.user.jid,'*Bu Kodu Kimseyle Paylaşmayın!*', MessageType.text)
+            await conn.sendMessage(conn.user.jid,'*මෙම කේතය කිසිවෙකු සමඟ බෙදා නොගන්න !*', MessageType.text)
             console.log(
                 chalk.blue.bold('Locale kuruyorsanız node bot.js ile botu başlatabilirsiniz.')
             );
         }
         else {
             await conn.sendMessage(conn.user.jid,st, MessageType.text)
-            await conn.sendMessage(conn.user.jid,'*Do Not Share This Code With Anyone!*', MessageType.text)
+            await conn.sendMessage(conn.user.jid,'*මෙම කේතය කිසිවෙකු සමඟ බෙදා නොගන්න !*', MessageType.text)
             console.log(
                 chalk.blue.bold('If you are installing locale, you can start the bot with node bot.js')
             );
@@ -56,4 +56,4 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
     await conn.connect();
 }
 
-whatsAsena()
+viper-x()
